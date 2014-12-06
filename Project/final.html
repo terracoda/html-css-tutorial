@@ -1,0 +1,153 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <title>Dustin Design Studio</title>
+  	<link href='http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='css/normalize.css' rel='stylesheet' type='text/css'>
+  <style>
+    body {      
+      color: #444444;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h1, h2, h3 {
+      font-family:Georgia, serif;
+    }
+    p {
+      line-height: 1.4;
+      font-size: 15px;
+    }
+    img.logo {
+      margin: 0 auto;
+      display: block;
+    }
+    img.profile {
+			float: left;
+      border: 1px solid #e76327;
+      width: 200px;
+      height: 200px;
+      padding: 5px;
+  		margin: 0 20px 0 0;
+    }
+    img.favourite {
+			float:none;
+      border: 1px solid #e76327;
+      border-radius: 50%;
+      width: 200px;
+      padding: 5px;
+      margin: 10px;
+    }
+    header {
+      padding-top: 110px;
+      padding-bottom: 100px;
+			background: url('images/background-surfer.png') no-repeat;
+      background-attachment: fixed;
+      color: #ffffff;
+      text-align: center;
+    }
+    header h1 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 22px;
+    }
+		section.box {
+			text-align: center;
+      overflow: hidden; 
+		}
+    section#about {
+      background: url('images/tile1.png');
+      overflow: hidden;
+    }
+		section#about p {
+			text-align: left;
+		}
+    section#favourites {
+    }
+    section#contact {
+			text-align: center; 
+      background: url('images/tile2.png');
+    }
+    section#contact img {
+			text-align: center;
+      margin: 20px;
+    }
+    section.box {
+      padding: 50px 100px;
+    }
+    section.box h2, 
+		section.box h3 {
+      color: #e76327;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      border-bottom: 1px solid #434A5C;
+      background: #000000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav li {
+      display: inline-block;
+      padding: 20px 35px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #e76327;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: 'Open+Sans', sans-serif;
+    }
+		footer {
+			text-align: center;
+		}
+  </style>
+</head>
+<body>
+  <nav role="navigation">
+		<ul class="menu">
+    	<li><a href="#about">About</a></li>
+    	<li><a href="#favourites">Favourites</a></li>
+    	<li><a href="#contact">Contact</a></li>
+  </ul>
+	</nav>
+  <header role="banner">
+    <img class="logo" src="images/dustin-banner.png">
+    <h1>Dustin Design Studio</h1>
+  </header>
+  <main role="main">
+  <section id="about" class="box">
+    <h2>About Me</h2>
+    <img class="profile" src="images/profile-dustin.png" alt="Dustin, at the Areana Cove, 2013">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo.</p>
+  </section>
+  <section id="favourites" class="box">
+    <h2>My Favourite Things</h2>
+    <h3>Here are a few things I really love</h3>
+    <img class="favourite" src="images/chica-chiwawa.jpg" alt="Chica, my chiwawa">
+    <img class="favourite" src="images/surfing.jpg" alt="Surfing">
+    <img class="favourite" src="images/woody-chiwawa.png" alt="Woody, my chiwawa">
+    <img class="favourite" src="images/shy-heart.jpg" alt="Artwork: The Rita Sculpture">
+  </section>
+	</main>
+  <section id="contact" class="box">
+    <h2>Contact Me</h2>
+    <a href="#"><img src="images/twitter.png" alt="Follow me on Twitter"></a>
+    <a href="https://facebook.com/dustindesignstudio"><img src="images/facebook.png" alt="Like Dustin Desgin Studio on facebook"></a>
+    <a href="#"><img src="images/linkedin.png" alt="Conect with me on Linked in"></a>
+  </section>
+	<footer role="contentinfo">
+		<p>&copy; Dustin Design Studio 2014</p>
+	</footer>
+</body>
+</html>

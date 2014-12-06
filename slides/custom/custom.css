@@ -1,0 +1,25 @@
+/* Custom  CSS */
+figure img {
+	margin-bottom: 0.25em;   
+}
+figcaption {
+	text-align: center;
+	margin: 0 0 1em 0;
+}
+small {
+	font-size: 80%;
+} 
+.panel {
+	display: inline-block;
+}
+.panel-span-three, .panel-left {
+	width: 45%;
+	float: left;
+}
+.panel-right {
+	width: 45%;
+	float: right;
+}
+.span-two {
+	width: 32%;
+}
