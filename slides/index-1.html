@@ -42,12 +42,17 @@
 		  	<div class="vcenter">
 					<h1>HTML + CSS + ARIA = Accessibility</h1> 
 					<p class="slide-note"><small><abbr>OCAD University</abbr> December 2014</small></p>
-					<p class="slide-note"><small><abbr></small></p> 
+					<p class="slide-note"><small>Much of the content of this workshop is adapted from a ladies learning code workshop</small></p> 
 				</div>
 		</section>
 		<section class="slide"> 
 		  <h2>HTML defines structure</h2>
-		  	<p>Much of this content is borrowed from a ladies learning code workshop</p>
+				<dl>
+					<dt>HTML:</dt> <dd>Defines the structure structure of your pages and page content.</dd>
+					<dt>CSS:</dt> <dd>Defines the presentation (i.e. makes the HTML beautiful)</dd>
+					<dt>ARIA:</dt> <dd>Defines functional roles and navigation landmarks for assistive technology. ARIA fills in some gaps that HTML is missing.</dd>
+				</dl>
+		  	
 		</section>
 		<!-- SLIDE: Workshop intro -->
     
@@ -55,31 +60,63 @@
     <!-- SLIDE: Today's project -->
     <article class='slide slide-list'>
       <h2>Today's Project</h2>
-
-      <a href="http://#"><img src="assets/project_screenshot.jpg"></a>
-      <p><a href="http://tessalt.github.io/LLC-HTML-CSS/Project/final.html" target="_blank">The original design is </a> to see the whole project</p>
+      <p>We'll be creating a one page website.</p>
+			
+			<h3>Our main tools will be:</h3>
+		 	<ul>
+				<li>Text editor: Sublime Text</li>
+				<li>Your Browser of choice: preferably Chrome or Firefox</li>
+			</ul>
+			
+			<h3>Site Design by <abbr title="Ladies Learning Code">LLC</abbr></h3>
+			<p>Here's the original <a href="http://tessalt.github.io/LLC-HTML-CSS/Project/final.html"><abbr>LLC</abbr> design</a>.</p>
+			<p>I've adapted the code to include accessibility features and replaced the content with <a href="../Project/final.html">Dustin Design Studio</a> content.</p> 
+		 <p>These 2 sites give you an idea of the finished project.</p>
     </article>
 
     <!-- SLIDE: Opening HTML files in your browser, Part 1 -->
     <article class='slide slide-list'>
-      <h1>Opening HTML files in your browser</h1>
+      <h2>HTML files &amp; your browser</h2>
+			<p>To view <abbr>HTML</abbr> files, you open them with your browser.</p>
     </article>
 
     <!-- SLIDE: Opening HTML files in your browser, Part 2 -->
     <article class='slide slide-list'>
       <h2>First, what is a browser?</h2>
-      <p>The browser's main functionality is to present the "web resource" you choose, by requesting it from the server and displaying it in the browser window. The "web resource" is usually an HTML document, but may also be a PDF, image, or other type.<p>
+      <p>The browser's main functionality is to present the "web resource" you choose, by requesting it from the server and displaying it in the browser window. The "web resource" is usually an <abbr>HTML</abbr> document, but may also be a PDF, an image, or other type of file.<p>
+			<h3>Common browsers</h3>
+			<ul>
+				<li>Chrome</li>
+				<li>Firefox</li>
+				<li>Safari</li>
+				<li>Internet Explorer</li>
+				<li>Opera</li>
+			</ul>
     </article>
 
     <!-- SLIDE: Opening HTML files in your browser, Part 3 -->
     <article class='slide slide-list'>
       <h2>What is an HTML document?</h2>
-      <p>Open a file with the browser. File, Open, Browse to Project folder blank.html.</p>
+			<p>An HTML file is a text file with the file extension <code>.html</code></p>
+      <p>We'll open <code>blank.html</code> with a browser:</p>
+			<h3>Steps</h3>
+				<ol>
+					<li>Double click on your browser (Chrome or Firefox)</li>
+					<li>From the browser menu choose: File, Open</li>
+					<li>Browse to your Project folder and choose the <code>blank.html</code> file.</li>
+				</ol>
     </article>
 
     <!-- SLIDE: Opening HTML files in your browser, Part 5 -->
     <article class='slide slide-list'>
-      <h1>Now, let's make a change to our file and re-open it in our browser.</h1>
+			<h2>Let's make a change</h2>
+      <p>Now, let's make a change to our file and re-open it in our browser to see the changes.</p>
+			 <h3>Steps</h3>
+				<ol>
+					<li>Double click on your browser (Chrome or Firefox)</li>
+					<li>From the browser menu choose: File, Open</li>
+					<li>Browse to your Project folder and choose the <code>blank.html</code> file.</li>
+				</ol>
     </article>
 
     <!-- SLIDE: Opening HTML files in your browser, Part 6 -->
@@ -90,8 +127,10 @@
         <li>Save your file (CMD + S or CONTROL + S)</li>
         <li>Right click and select "Open in Browser".</li>
         <li>Change something else and open it in your browser again, just to make sure you've got it!</li>
-        <li>After saving, you can also just refresh your browser to see the changes (rather than opening your file in a new tab every time!)</li>
-      </ol>
+			 </ol>
+        <p>Note that after saving, you can also just refresh your browser to see the changes (rather than opening your file in a new tab every time!). Just hit the refresh icon.</p>
+				
+
     </article>
 
     <!-- SLIDE: You won't break anything -->
@@ -703,10 +742,6 @@ img.favourite {
     <p>If we show the outlines of all the elements in an HTML document, it looks a bit like the next slide:</p>        
     </article>
 
-    <!-- SLIDE CSS Box Model 2 -->
-    <article class="slide slide-list">      
-     <img src="assets/redboxes.png"></li>
-    </article>
 
     <!-- SLIDE CSS Box Model 3 -->
     <article class="slide slide-list">
@@ -731,7 +766,7 @@ h2 {
   background: pink;
 }
 </code></pre>
-      <li>So far, this looks pretty awfull. All the elements are too close to each other!</li>        
+      <li>So far, this looks pretty awful. All the elements are too close to each other!</li>        
       <img src="assets/bm1.png">
       </ul>
     </article>
