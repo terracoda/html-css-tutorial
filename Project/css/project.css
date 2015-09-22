@@ -127,6 +127,10 @@ section.box {
 	color: #f2fce4;
 	text-align: center; 
 	background-color: #2e2a26;
+	/*Use the line below instead to make a textured background 
+	with a tiled background image. Be mindful of this technique and 
+	ensure good fg/bg contrast.*/  
+	/*background: url('../images/tile2-llc.png');*/
 }
 #contact h2 {
    color: #f2fce4;  
