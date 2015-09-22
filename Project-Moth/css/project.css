@@ -1,0 +1,208 @@
+/*Design layout based LLC's Beginner HTML workshop.
+I've added accessibility features to the code base. */
+
+/*Colors*/
+/* 
+/*I used colors from the moth image. Choose your own color palette. Be sure to check foreground and background contrast ratios.
+http://webaim.org/resources/contrastchecker/
+*/
+/*
+Here's the colors I used:
+font: #2e2a26 (dark brown)
+primary: #59807d (teal)
+secondary: #9fc0bd (light teal)
+accent: #f2fce4  (light yellow green) 
+accent 2: #87552f  (light brown) 
+accent 2 darkened for accessibilty: #5a391f
+accent 3: #9c8879 (very light brown)
+*/
+body {      
+	color: #2e2a26;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6, caption {
+	font-family: Georgia, Garamond, serif;
+	color: #59807d;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 32px;
+}
+h3, caption {
+	font-size: 24px;
+}
+img {
+	width: 200px; /*All images unless otherwise specified are given a width of 200px */
+	border: 1px solid #87552f; /*All images have a colored border unless re-defined elsewhere. */ 
+}
+img.logo {
+	margin: 0 auto;
+	display: block;
+	width: 100px; /*Over rides general rule above.*/ 
+	border: none;
+}
+img.profile {
+	float: left;
+	/*border-color: ;*/
+	padding: 5px;
+	margin: 0 20px 0 0;
+}
+img.favourite {
+	float: none;
+	/*border-color: ;*/ 
+	border-radius: 50%;
+	padding: 5px;
+	margin: 10px;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-bottom: 3px solid #87552f;
+	background: #2e2a26;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	display: inline-block;
+	padding: 20px 35px;
+	border-bottom: none;
+	}
+nav a:link, 
+nav a:visited {
+	text-decoration: none;
+	color: #f2fce4;
+	background:  #2e2a26;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: none;
+}
+nav a:hover, 
+nav a:focus, 
+nav a:active {
+	text-decoration: none;
+	color: #2e2a26;
+	background: #f2fce4;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: none;
+}
+header {
+	padding-top: 110px;
+	padding-bottom: 100px;
+  	background-color: #59807d;
+	/*use the line below instead if you want a banner image*/
+	/*background: #59807d url('images/banner-image.png') no-repeat;*/   
+	background-attachment: fixed;
+	text-align: center;
+}
+header h1 {
+	color: #ffffff; 
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+header p {
+	font-size: 22px;
+}
+section.box {
+	text-align: center;
+	overflow: hidden;
+	padding: 50px 100px;
+	border-top: 1px dotted #9fc0bd; 
+}
+#about p {
+	text-align: left;
+}
+#contact {
+	color: #f2fce4;
+	text-align: center; 
+	background-color: #2e2a26;
+}
+#contact h2 {
+   color: #f2fce4;  
+}
+#contact img {
+	text-align: center;
+	margin: 20px;
+	border: none;
+}
+footer {
+	text-align: center;
+	background-color: #9fc0bd;
+	margin: 0;
+	padding: 15px;
+}
+/**  Table Styles
+*******************/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+caption {
+	color: #5a391f;
+  	padding: 15px;
+	border-top: 1px dotted #5a391f;
+}
+/* For Row striping, target the tr and use keyword odd or even */
+/*tr:nth-of-type(odd) { 
+  	background: #f2fce4;
+}*/ 
+/* For column striping target the td and use keyword odd or even */ 
+td:nth-of-type(odd) {
+	background: #f2fce4;
+}
+/*For column rainbow striping target the td and use a 
+column number instead of a keyword.
+Choose a set of light colors for the background */
+/*td:nth-of-type(1) {
+    background: #9fc0bd;
+}
+td:nth-of-type(2) {
+    background: #e8d2c1;
+}
+td:nth-of-type(3) {
+    background: #f2fce4;
+}
+td:nth-of-type(3) {
+    background: #b0aac7;
+}
+td:nth-of-type(4) {
+    background: #d1e1ae;
+}
+td:nth-of-type(5) {
+    background: #CBDDDB;
+}*/
+th, td {
+   padding: 15px;
+   border: 1px solid #9c8879;  
+}
+th {
+	font-family: Georgia, Garamond, serif;
+	font-size: 1.1em; 
+}
+thead th { 
+  background: #87552f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #5a391f;
+}
+td, th {  
+  text-align: left; 
+}
+tfoot th {
+   /*background: ;*/
+   /*color: ; */
+   font-size: 80%;
+   text-align: center;
+}
