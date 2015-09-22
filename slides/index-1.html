@@ -40,15 +40,15 @@
 		<section class="slide"> 
 		  <h2>Diving into a little code</h2>
 		  	<div class="vcenter">
-					<h1>HTML + CSS + ARIA = Accessibility</h1> 
+					<h1>HTML + CSS + ARIA = Accessible Website</h1> 
 					<p class="slide-note"><small><abbr>OCAD University</abbr> December 2014</small></p>
 					<p class="slide-note"><small>Much of the content of this workshop is adapted from a ladies learning code workshop</small></p> 
 				</div>
 		</section>
 		<section class="slide"> 
-		  <h2>HTML defines structure</h2>
+		  <h2>The code we'll write</h2>
 				<dl>
-					<dt>HTML:</dt> <dd>Defines the structure structure of your pages and page content.</dd>
+					<dt>HTML:</dt> <dd>Defines the structure of your pages and page content.</dd>
 					<dt>CSS:</dt> <dd>Defines the presentation (i.e. makes the HTML beautiful)</dd>
 					<dt>ARIA:</dt> <dd>Defines functional roles and navigation landmarks for assistive technology. ARIA fills in some gaps that HTML is missing.</dd>
 				</dl>
@@ -112,7 +112,7 @@
 	      <ol>
 	        <li>Change something. For example, change the text within the &#60;p&#62; and &#60;/p&#62; tags.</li>
 	        <li>Save your file <code>(CMD + S or CONTROL + S)</code></li>
-	        <li>To re-open the change file: Right click and select "Open in Browser".</li>
+	        <li>To re-open the changed file: Right click and select "Open in Browser".</li>
 	        <li>Go back to <em>Sublime Text</em> and change something else and open it in your browser again, just to make sure you've got it!</li>
 				 </ol>
 	        <p><strong>Note</strong> that after saving, you can also just refresh your browser to see the changes (rather than re-opening your file every time!). Just hit the refresh icon and you should see your changes.</p>
@@ -126,13 +126,13 @@
 
     <!-- new slide -->
     <article class='slide slide-subhead'>
-      <h1>Back to <abbr>HTML</abbr>, <abbr>CSS</abbr> &#38; <abbr>ARIA</abbr>!</h1>
+      <h1>Back to the code: <br><abbr>HTML</abbr>, <abbr>CSS</abbr> &#38; <abbr>ARIA</abbr>!</h1>
     </article>
 
     <!-- new slide -->
     <article class='slide slide-list'>
       <h2>HyperText Markup Language (<abbr>HTML</abbr>)</h2>
-      <p>We use HTML to describe each part of a webpage. HTML is what we use to create meaningful structure.</p>
+      <p>We use HTML to describe each part of a webpage. <abbr>HTML</abbr> is what we use to create meaningful structure.</p>
       <ul>
         <li>&#60;h1&#62; and &#60;/h1&#62;</li>
         <li>&#60;p&#62; and &#60;/p&#62;</li>
@@ -160,15 +160,15 @@
     <article class='slide'>
       <h2>Old Tags - no longer in use!</h2>
       <p>It&apos;s very important to create clean, semantic and valid <abbr>HTML</abbr> code (<abbr title="also known as">AKA</abbr> markup). When we write <abbr>HTML</abbr>, we are only describing the content - not defining how our website looks (that&apos;s what <abbr>CSS</abbr> is for).</p>
-      <p>Here are a few old tags that we no longer use:</p>
+      <p>Here are a few old tags that we no longer use because of their general presentational nature:</p>
       <ul>
         <li><code>&#60;u&#62;</code>I'm underlined text!<code>&#60;/u&#62;</code></li>
-        <li><code>&#60;marquee&#62;</code>Anyone remember the marquee tag?<code>&#60;/marquee&#62;</code></li>
-        <li><code>&#60;font size="large"&#62;</code>Huge text goes here!<code>&#60;/font&#62;</code></li>
-        <li><code>&#60;center&#62;</code>I'm centered text!<code>&#60;/center&#62;</code></li>
+<li><code>&#60;center&#62;</code>I'm centred text!<code>&#60;/center&#62;</code></li>
+        <li><code>&#60;font size="large"&#62;</code>Huge text goes here!<code>&#60;/font&#62;</code></li>        
+				<li><code>&#60;marquee&#62;</code>Anyone remember the marquee tag?<code>&#60;/marquee&#62;</code>. It makes things move and blink - yuk!</li>
       </ul>
-      <p>These tags have been removed from the specification, or <em>deprecated</em>.</p>
-			<h3>Presentational tag replacements</h3>
+      <p>The above tags have been removed from the <abbr>HTML</abbr> specification, or <em>deprecated</em>. We now use <abbr>CSS</abbr> to underline things, centre things, define font sizes and to carefully create safe animations.</p>
+			<h3>Potential tag replacements</h3>
 			<ul>
 				<li><code>&#60;i&#62;</code>Italicized text<code>&#60;/i&#62;</code> - <code>&#60;em&#62;</code>Emphasized text is more meaningful<code>&#60;/em&#62;</code></li>
 				<li><code>&#60;b&#62;</code>Bolded text<code>&#60;/b&#62;</code> - <code>&#60;strong&#62;</code>Strong text is more meaningful<code>&#60;/strong&#62;</code></li>
@@ -237,7 +237,7 @@
       <h2>A note about <abbr>HTML</abbr> &amp; <abbr>CSS</abbr></h2>
       <p><abbr>HTML</abbr> and <abbr>CSS</abbr> are different coding languages. They are <abbr>different</abbr> languages. Like French and Italian, they each have their own set of rules. It takes time to learn these languages. Don't worry if you don't get it all right away.</p>
  			<h3>Unlike French &amp; Italian</h3>
-			<p>They each used for different purposes.</p>
+			<p>They are each used for different purposes.</p>
 			<ul>
 				<li>What's <abbr>HTML</abbr> for?</li>
 				<li>What's <abbr>CSS</abbr> for?</li>
@@ -258,35 +258,34 @@
     <article class='slide slide-subhead'>
       <h2>Let's focus on HTML for now</h2>
       <p>Time to start writing some HTML (which is also called <em>markup</em>)</p>
-      <p>You can remove what we added between <code>&#60;style&#62;</code> and <code>&#60;/style&#62;</code> for now.</p>
-			<p>Keep the actual opening <code>&#60;style&#62;</code> and closing <code>&#60;/style&#62;</code> tags there!</p>
+      <p>In the <code>blank.html</code> file, you can remove what we added between <code>&#60;style&#62;</code> and <code>&#60;/style&#62;</code>. Keep the actual opening tags there! We'll need them later for our <abbr>CSS</abbr> code.</p>
+
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2><abbr>HTML</abbr> Tags</h2>
-      <p>The structure of a webpage is defined by HTML <span class="keyword">tags</span>. Angled brackets denote tags, like this:</p>
-      <p class="centered" style="font-size: 3em;"><code>&lt;tag&gt;</code></p>
-      <p class="centered sidenote">Think about HTML tags like the beams of a house.<br />
-        It's what holds up a webpage.</p>
-      <p class="centered"><img src="assets/house_beam.jpg" width="300" height="232" alt="house beam" /></p>
+      <p>The structure of a webpage is defined by <abbr>HTM</abbr>L <em>tags</em>. Angled brackets denote tags, like this:</p>
+      <p class="slide-note"><code>&lt;tag&gt;</code></p>
+      <p>Think about <abbr>HTML</abbr> tags like the beams of a house.<br />
+        It's what gives your content structural integrity.</p>
+      
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>Typically come in pairs</h2>
+      <h2>Typically <em>tags</em> come in pairs</h2>
       <p>An opening tag... <code class="slide-note">&lt;tag&gt;</code> ...and a closing tag with a forward slash <code class="slide-note">&lt;/tag&gt;</code></p>
       <h3>Some examples that you've already seen:</h3>
 <pre><code>&#60;!DOCTYPE html&#62; 
 &#60;html lang="en"&#62;
-&#60;html&#62;
   &#60;head&#62;
     &#60;title&#62;Page title goes here&#60;/title&#62;
     &#60;meta charset="utf-8"&#62;
   &#60;/head&#62;
   &#60;body&#62;
    &#60;p&#62;This is a paragraph.&#60;/p&#62;
-  &#60;/body&#62;;
+  &#60;/body&#62;
 &#60;/html&#62;
 </code>
 </pre>   
@@ -297,11 +296,10 @@
       <h2>Tags have relationships</h2>
       <p>One tag can be wrapped or nested in other tags, like this:</p>
       <p><strong><code class="slide-note">&lt;tag&gt;</code></strong><code class="slide-note">&lt;tag&gt;</code><code class="slide-note">&lt;/tag&gt;</code><strong><code class="slide-note">&lt;/tag&gt;</code></strong></p>
-      <p>This relationship is often referred to using the terms <em>parent</em> node and <em>child</em> nodes.</p>
+      <p>We use basic kinship terms to describe the nested relationship: the <em>parent</em> node wraps around the <em>child</em> node. The <em>child</em> node is nested inside the <em>parent</em> node.</p>
       <h3>For example</h3>
 <pre style="width: 45%; float: left;">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html&gt;
   &lt;head&gt;
     <strong>&lt;title&gt;</strong> <strong>&lt;/title&gt;</strong>
   &lt;/head&gt;
@@ -309,8 +307,7 @@
   &lt;/body&gt;
 &lt;/html&gt;</pre> 
 <pre style="width: 45%; float: right;">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html&gt;
   <strong>&lt;head&gt;</strong>
     &lt;title&gt; &lt;/title&gt;
   <strong>&lt;/head&gt;</strong>
@@ -322,11 +319,11 @@
   <li><code>&lt;title&gt;</code> is nested between opening and closing <code>&lt;head&gt;</code> tags so <code>&lt;head&gt;</code> is the parent node and <code>&lt;title&gt;</code> is the child node.</li>
   <li>Going further, <code>&lt;head&gt;</code> is also (at the same time) a child node of <code>&lt;html&gt;</code>.</li>
   <li>While <code>&lt;html&gt;</code> is the always the "root" node and has <strong>no</strong> parent nodes.</li>
-  <li>Notice too that <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are on the same level. They are both child nodes of <code>&lt;html&gt;</code>. They're called sublings!</li>
+  <li>Notice too that <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> are on the same level. They are both child nodes of <code>&lt;html&gt;</code>. They're called siblings!</li>
 </ul>
     </article>
 		<!-- SLIDE: HTML -->
-    <article class='slide'>
+    <!--<article class='slide'>
       <h2>Accessible code components</h2>
       <p>In the previous example there are 2 items that are not tags that are important for accessibility.</p>
  			<ul>
@@ -336,23 +333,29 @@
 			
 			 <p>There is a different <em>doctype</em> for each version of <abbr>HTML</abbr>. You need a doctype in order to be able to check your code in a validator.</p>
 			 <p>Attributes describe tags. There are several types of attributes. The lang-attribute is particular important for accessibility as it defines the human language for the page or for the content inside a particular tag.</p>
-    </article>
+    </article>  -->
 
     <!-- SLIDE: HTML -->
     <article class='slide'>
-      <h2><code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>?</h2>
-      <p>Things that you put in the <code>&lt;body&gt;</code> of your HTML document will show up on your webpage. Things that you put in the <code>&lt;head&gt;</code> of your HTML document won't show up. You can think of the <code>&lt;head&gt;</code> as a place to write secret notes to your browser. For example, our styles go in the head. We don't want our styles to show up on our page, but we do want our browser to apply the styles.</p>
+      <h2>Understand the <code>&lt;head&gt;</code> &amp; <code>&lt;body&gt;</code></h2>
+			<h3><code>&lt;head&gt;</code></h3>
+			<p>The <code>&lt;head&gt;</code> is where as a place important things for the browser. For example, links to our style files go in the head. We don't want our styles to show up on our page, but we do want our browser to apply the styles. Important accessibility settings are also found in the head, like the page <em>title</em> and the <em>character encoding</em> setting.</p>
+			
+			<h3><code>&lt;body&gt;</code></h3>
+      <p>It is the content between the <code>&lt;body&gt;</code> tags that will show up on your webpage.</p>
     </article>
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
       <h2>Exercise: Write <code>HTML</code> code</h2>
-			<h3>Open the file "blank.html" in Sublime Text</h3>
+			<h3>Open the file <code>blank.html</code> in Sublime Text</h3>
       <ol>
         <li>Change the content within the opening and closing <code>&lt;title&gt;</code> tags, and observe the change in your browser.</li>
         <li>Add an additional paragraph: <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code></li>
-        <li>Add a few headings to the page, above each paragraph. Hint: you'll need to use some or all of the following tags: <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>, <code>&lt;h2&gt;</code> and <code>&lt;/h2&gt;</code>, and you can even try using h3, h4, h5 and h6, if you like.</li>
-        <li>Try adding three links. The code for a link looks like this:<br><code>&lt;a href="http://link.com"&gt;Click here&lt;/a&gt;</code>
+        <li>Add a heading to the page, and perhaps another above each paragraph. Hint: you'll need to use some or all of the following tags: <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>, <code>&lt;h2&gt;</code> and <code>&lt;/h2&gt;</code>. Heading levels go from <code>h1</code> as the top level through to <code>h6</code>.</li>
+        <li>Try adding three links to some of your favourite websites. The code for a link looks like this:<br>
+					<pre><code>&lt;a href="http://google.com"&gt;link text goes here&lt;/a&gt;</code></pre>
+					<p><strong>Remember:</strong> use meaningful words for your link text.</p>
       </ol>
       <p>Don't worry too much about <strong>WHERE</strong> you're putting things for now. Just write some code!</p>
       <p>Don't forget to save and refresh your browser to see your code in action!</p>
@@ -360,13 +363,12 @@
 
     <!-- SLIDE: HTML -->
     <article class='slide slide-list'>
-      <h2>A note about attributes</h2>
-      <p>Attributes are another important part of HTML markup.</p>
-      <p>An HTML attribute is a modifier of an HTML element. HTML attributes generally appear as name-value pairs, separated by "=", and are written within the start tag of an element, after the element's name:</p>
-        <pre><code>&lt;tag attribute="value"&gt;(content to be modified by the tag)&lt;/tag&gt;</code></pre>
+      <h2><abbr>HTML</abbr> Attributes</h2>
+      <p><abbr>HTML</abbr> attributes modify or describe HTML elements, much like an adjective describes or modifies a noun. HTML attributes generally appear as name-value pairs, separated by "=", and are written within the start tag of an element, after the element's name:</p>
+        <pre class="slide-note"><code>&lt;tag attribute="value"&gt;some content&lt;/tag&gt;</code></pre>
       <p>Here's an example of an attribute that we've already seen today:</p>
-        <pre><code>&lt;a href="http://google.com"&gt;google&lt;/a&gt;</code></pre>
-      <p>In this case, "a" is the tag, "href" is the attribute and "http://google.com" is the value.</p>
+        <pre class="slide-note"><code>&lt;a href="http://google.com"&gt;google&lt;/a&gt;</code></pre>
+      <p>In this case, <code>a</code> is the tag, <code>href</code> is the attribute and <code>http://google.com</code> is the attribute's value.</p>
     </article>
 
     <!-- SLIDE: HTML -->
